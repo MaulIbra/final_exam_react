@@ -3,9 +3,9 @@ import {Form} from 'react-bootstrap'
 import {connect} from "react-redux";
 
 const FormOption = (props) => {
-    const {change,keys,disable} = props
+    const {change,keys,disable,data} = props
 
-    let label
+    let label = {}
     switch (keys) {
         case "province":
             label = "Provinsi"
@@ -25,10 +25,10 @@ const FormOption = (props) => {
 
     return (
         <div>
-            <Form.Control as="select" onChange={e => {change(keys,e.target.value)}} disabled={disable}>
+            <Form.Control as="select" onChange={e => {change(keys,e.target.value)}} disabled={disable} data-test="option-selected" >
                 <option>{`-- Pilih ${label} --`}</option>
                 {
-                    props[keys].map((val)=>{
+                    data.map((val)=>{
                         return <option key={val.id} value={`${val.id}:${val.name}`}>{val.name}</option>
                     })
                 }
@@ -37,13 +37,6 @@ const FormOption = (props) => {
     );
 };
 
-const mapStateToProps = (state) =>{
-    return{
-        province : state.regionReducer.regionTodo.province,
-        districts : state.regionReducer.regionTodo.districts,
-        subDistrict: state.regionReducer.regionTodo.subDistrict,
-        village : state.regionReducer.regionTodo.village
-    }
-}
 
-export default connect(mapStateToProps,null)(FormOption);
+
+export default FormOption;

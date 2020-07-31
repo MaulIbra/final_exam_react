@@ -1,11 +1,11 @@
 import React, {useEffect, useLayoutEffect, useRef, useState} from 'react';
 import FormOption from "../../component/FormOption";
 import {getDistrict, getProvince, getSubDistrict, getToken, getVillage} from "./RegionService";
-import regionData from "../../regionData.json";
 import MapsComponent from "../../component/MapsComponent";
 import {setDistrict, setProvince, setSubDistrict, setVillage} from "../../redux/reducer/action/region/Region";
 import {connect} from "react-redux";
 import {Form,Col} from "react-bootstrap";
+import RegionList from "./RegionList";
 
 const RegionContainer = (props) => {
     const [token,setToken] = useState("")
@@ -15,12 +15,6 @@ const RegionContainer = (props) => {
         districts : {},
         subDistrict : {},
         village : {}
-    })
-    const [coords,setCoords] = useState({
-        lat: 0.7893,
-        lng: 113.9213,
-        data:[],
-        zoom: 4,
     })
 
 
@@ -35,7 +29,6 @@ const RegionContainer = (props) => {
         if (firstUpdate.current) {
             return;
         }
-        setRegionData(selectedRegion.province.name)
         props.setDistrict([])
         props.setSubDistrict([])
         props.setVillage([])
@@ -61,17 +54,6 @@ const RegionContainer = (props) => {
         gettingVillage()
     },[selectedRegion.subDistrict])
 
-
-    const setRegionData = (name)=>{
-        setCoords({
-            ...coords,
-            lat: regionData[name] ? regionData[name].centerCoord.lat :coords.lat ,
-            lng: regionData[name] ? regionData[name].centerCoord.lng : coords.lng ,
-            data: regionData[name] ? regionData[name].data : [],
-            zoom: regionData[name] ? 6 : coords.zoom
-        })
-        console.log(name)
-    }
 
     const handleChange = (key,val)=>{
         const res = val.split(":")
@@ -143,33 +125,36 @@ const RegionContainer = (props) => {
     }
 
     return (
-        <div>
-        <div>
-            <Form>
-                <Form.Row>
-                    <Form.Group as={Col}>
-                        <Form.Label>Provinsi</Form.Label>
-                        <FormOption keys="province" disable={props.province.length === 0} change={(key, val)=>handleChange(key,val)}/>
-                    </Form.Group>
-                    <Form.Group as={Col}>
-                        <Form.Label>Kab / Kota</Form.Label>
-                        <FormOption  keys="districts" disable={props.districts.length === 0} change={(key,val)=>handleChange(key,val)}/>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Form.Group as={Col}>
-                        <Form.Label>Kecamatan</Form.Label>
-                        <FormOption  keys="subDistrict" disable={props.subDistrict.length === 0} change={(key,val)=>handleChange(key,val)}/>
-                    </Form.Group>
-                    <Form.Group as={Col}>
-                        <Form.Label>Kelurahan</Form.Label>
-                        <FormOption  keys="village" disable={props.village.length === 0} change={(key,val)=>handleChange(key,val)}/>
-                    </Form.Group>
-                </Form.Row>
-            </Form>
-        </div>
-        <div>
-            <MapsComponent coords={coords}/>
+        <div className="container-region">
+            <div className="container-map">
+                <MapsComponent keys={selectedRegion.province.name}/>
+            </div>
+            <div className="container-form">
+                <Form>
+                    <Form.Row>
+                        <Form.Group as={Col}>
+                            <Form.Label>Provinsi</Form.Label>
+                            <FormOption keys="province" disable={props.province.length === 0} change={(key, val)=>handleChange(key,val)} data={props.province}/>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Kab / Kota</Form.Label>
+                            <FormOption  keys="districts" disable={props.districts.length === 0} change={(key,val)=>handleChange(key,val)} data={props.districts}/>
+                        </Form.Group>
+                    </Form.Row>
+                    <Form.Row>
+                        <Form.Group as={Col}>
+                            <Form.Label>Kecamatan</Form.Label>
+                            <FormOption  keys="subDistrict" disable={props.subDistrict.length === 0} change={(key,val)=>handleChange(key,val)} data={props.subDistrict}/>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Kelurahan</Form.Label>
+                            <FormOption  keys="village" disable={props.village.length === 0} change={(key,val)=>handleChange(key,val)} data={props.village}/>
+                        </Form.Group>
+                    </Form.Row>
+                </Form>
+                <div className="container-list">
+                    <RegionList/>
+                </div>
         </div>
         </div>
     );

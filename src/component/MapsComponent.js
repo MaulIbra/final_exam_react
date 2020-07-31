@@ -1,17 +1,25 @@
-import React, {useState} from 'react';
-import {Map, Polygon, TileLayer} from "react-leaflet";
+import React from 'react';
+import Chart from "react-google-charts";
+import regionData from '../regionData.json'
+const MapsComponent = ({keys}) => {
 
-const MapsComponent = ({coords}) => {
-
-    const position = [coords.lat, coords.lng]
+    console.log(regionData[keys])
     return (
-        <Map className="map" center={position} zoom={coords.zoom}>
-            <TileLayer
-                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-             <Polygon color="red" positions={coords.data} />
-        </Map>
+        <Chart
+            className="map"
+            chartType="GeoChart"
+            data={[
+                ["abv", "population%"],
+                [`${regionData[keys] ? regionData[keys].id: "ID-AC"}`, `${regionData[keys] ? regionData[keys].population: 2}`],
+            ]}
+            mapsApiKey="AIzaSyAnwjnAqQckxUUOxsRq_Ajzzya8VV1u9IU"
+            options={{
+                region: "ID",
+                resolution: "provinces",
+                colors: ['blue']
+            }}
+            rootProps={{ 'data-testid': '1' }}
+        />
     );
 };
 
