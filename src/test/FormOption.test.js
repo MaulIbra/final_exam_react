@@ -28,10 +28,4 @@ describe('<FormOption/>',()=>{
         const wrapper = shallow(<FormOption keys={"province"} data={mockData} change={mockedOnChange} disable={false}/>)
         expect(wrapper.text()).toBe("-- Pilih Provinsi --ACEHSUMATERA UTARA");
     });
-    it('should <FormOption> select corectly', function () {
-        const mockedChange = jest.fn()
-        const wrapper = shallow(<FormOption keys={"province"} data={mockData} change={mockedChange} disable={false}/>)
-        wrapper.find('.list__option').last().simulate('click', null);
-        expect(wrapper.find('.list__value-container').text()).toEqual('two');
-    });
 })

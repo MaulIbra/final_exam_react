@@ -25,7 +25,7 @@ const FormOption = (props) => {
 
     return (
         <div>
-            <Form.Control as="select" onChange={e => {change(keys,e.target.value)}} disabled={disable} data-test="option-selected" >
+            <Form.Control as="select" onChange={e => {change(keys,e.target.value)}} disabled={disable} className="select_option" >
                 <option>{`-- Pilih ${label} --`}</option>
                 {
                     data.map((val)=>{
