@@ -5,7 +5,7 @@ import RegionContainer from "./region/RegionContainer";
 import {Route, Switch} from "react-router-dom";
 
 
-const MainPage = () => {
+const PageController = () => {
     return (
         <div>
             <NavbarComponent/>
@@ -24,4 +24,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default PageController;

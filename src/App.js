@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
-import MainPage from "./domain/MainPage";
+import PageController from "./domain/PageController";
 
 function App() {
   return (
       <BrowserRouter>
-        <MainPage/>
+        <PageController/>
       </BrowserRouter>
   );
 }
