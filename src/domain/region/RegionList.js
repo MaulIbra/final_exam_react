@@ -35,7 +35,7 @@ const RegionList = (props) => {
                         return (
                             <tr>
                                 <td>{val.id}</td>
-                                <td>{val.name}</td>
+                                <td>{val.nama}</td>
                             </tr>
                         )
                     })

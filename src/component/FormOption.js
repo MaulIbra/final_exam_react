@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form} from 'react-bootstrap'
-import {connect} from "react-redux";
 
 const FormOption = (props) => {
     const {change,keys,disable,data} = props
@@ -29,7 +28,7 @@ const FormOption = (props) => {
                 <option>{`-- Pilih ${label} --`}</option>
                 {
                     data.map((val)=>{
-                        return <option key={val.id} value={`${val.id}:${val.name}`}>{val.name}</option>
+                        return <option key={val.id} value={`${val.id}:${val.nama}`}>{val.nama}</option>
                     })
                 }
             </Form.Control>

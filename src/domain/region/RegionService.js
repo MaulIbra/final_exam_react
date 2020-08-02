@@ -1,30 +1,25 @@
 import axios from 'axios'
 
-const BASE_URL = "https://x.rajaapi.com/"
+const BASE_URL = "https://dev.farizdotid.com/api/daerahindonesia"
 
-const getToken = async function(){
-    const response = await axios.get(BASE_URL+'poe')
+const getProvince = async function(){
+    const response = await axios.get(BASE_URL+'/provinsi/')
     return response.data
 }
 
-const getProvince = async function(token){
-    const response = await axios.get(BASE_URL+token+'/m/wilayah/provinsi')
+const getDistrict = async function(id){
+    const response = await axios.get(BASE_URL+'/kota?id_provinsi='+id)
     return response.data
 }
 
-const getDistrict = async function(token,id){
-    const response = await axios.get(BASE_URL+token+'/m/wilayah/kabupaten?idpropinsi='+id)
+const getSubDistrict = async function(id){
+    const response = await axios.get(BASE_URL+'/kecamatan?id_kota='+id)
     return response.data
 }
 
-const getSubDistrict = async function(token,id){
-    const response = await axios.get(BASE_URL+token+'/m/wilayah/kecamatan?idkabupaten='+id)
+const getVillage = async function(id){
+    const response = await axios.get(BASE_URL+'/kelurahan?id_kecamatan='+id)
     return response.data
 }
 
-const getVillage = async function(token,id){
-    const response = await axios.get(BASE_URL+token+'/m/wilayah/kelurahan?idkecamatan='+id)
-    return response.data
-}
-
-export {getToken,getProvince,getDistrict,getSubDistrict,getVillage}
+export {getProvince,getDistrict,getSubDistrict,getVillage}

@@ -8,7 +8,6 @@ import {Form,Col} from "react-bootstrap";
 import RegionList from "./RegionList";
 
 const RegionContainer = (props) => {
-    const [token,setToken] = useState("")
     const firstUpdate = useRef(true);
     const [selectedRegion,setSelectedRegion] = useState({
         province : {},
@@ -19,10 +18,8 @@ const RegionContainer = (props) => {
 
 
     useEffect(()=>{
-        gettedToken().then((result)=>{
-            gettingProvince(result)
-        })
-    },[token])
+        gettingProvince()
+    },[])
 
 
     useLayoutEffect(()=>{
@@ -67,58 +64,33 @@ const RegionContainer = (props) => {
         })
     }
 
-    const gettedToken = async function() {
-        let x = await gettingToken()
-        return x
-    }
-
-    const gettingToken = ()=>{
-        getToken().then((result)=>{
-            if (result.code === 200){
-                sessionStorage.setItem('token',`MeP7c5ne${result.token}`)
-                setToken(`MeP7c5ne${result.token}`)
-            }
-        }).catch((error)=>{
-            console.log(error)
-        })
-        return sessionStorage.getItem('token')
-    }
-
-    const gettingProvince = (key)=>{
-        getProvince(key).then((result)=>{
-            if (result.code === 200){
-                props.setProvince(result.data)
-            }
+    const gettingProvince = ()=>{
+        getProvince().then((result)=>{
+            props.setProvince(result.provinsi)
         }).catch((error)=>{
             console.log(error)
         })
     }
 
     const gettingDistrict = ()=>{
-        getDistrict(token,selectedRegion.province.id).then((result)=>{
-            if (result.code === 200){
-                props.setDistrict(result.data)
-            }
+        getDistrict(selectedRegion.province.id).then((result)=>{
+            props.setDistrict(result.kota_kabupaten)
         }).catch((error)=>{
             console.log(error)
         })
     }
 
     const gettingSubDistrict = ()=>{
-        getSubDistrict(token,selectedRegion.districts.id).then((result)=>{
-            if (result.code === 200){
-                props.setSubDistrict(result.data)
-            }
+        getSubDistrict(selectedRegion.districts.id).then((result)=>{
+            props.setSubDistrict(result.kecamatan)
         }).catch((error)=>{
             console.log(error)
         })
     }
 
     const gettingVillage = ()=>{
-        getVillage(token,selectedRegion.subDistrict.id).then((result)=>{
-            if (result.code === 200){
-                props.setVillage(result.data)
-            }
+        getVillage(selectedRegion.subDistrict.id).then((result)=>{
+            props.setVillage(result.kelurahan)
         }).catch((error)=>{
             console.log(error)
         })
