@@ -6,6 +6,7 @@ import {setDistrict, setProvince, setSubDistrict, setVillage} from "../../redux/
 import {connect} from "react-redux";
 import {Form,Col} from "react-bootstrap";
 import RegionList from "./RegionList";
+import PieChartComponent from "../../component/PieChartComponent";
 
 const RegionContainer = (props) => {
     const [token,setToken] = useState("")
@@ -125,37 +126,42 @@ const RegionContainer = (props) => {
     }
 
     return (
-        <div className="container-region">
-            <div className="container-map">
-                <MapsComponent keys={selectedRegion.province.name}/>
-            </div>
-            <div className="container-form">
-                <Form>
-                    <Form.Row>
-                        <Form.Group as={Col}>
-                            <Form.Label>Provinsi</Form.Label>
-                            <FormOption keys="province" disable={props.province.length === 0} change={(key, val)=>handleChange(key,val)} data={props.province}/>
-                        </Form.Group>
-                        <Form.Group as={Col}>
-                            <Form.Label>Kab / Kota</Form.Label>
-                            <FormOption  keys="districts" disable={props.districts.length === 0} change={(key,val)=>handleChange(key,val)} data={props.districts}/>
-                        </Form.Group>
-                    </Form.Row>
-                    <Form.Row>
-                        <Form.Group as={Col}>
-                            <Form.Label>Kecamatan</Form.Label>
-                            <FormOption  keys="subDistrict" disable={props.subDistrict.length === 0} change={(key,val)=>handleChange(key,val)} data={props.subDistrict}/>
-                        </Form.Group>
-                        <Form.Group as={Col}>
-                            <Form.Label>Kelurahan</Form.Label>
-                            <FormOption  keys="village" disable={props.village.length === 0} change={(key,val)=>handleChange(key,val)} data={props.village}/>
-                        </Form.Group>
-                    </Form.Row>
-                </Form>
-                <div className="container-list">
-                    <RegionList/>
+        <div className="container-region-parent">
+            <div className="container-region">
+                <div className="container-map">
+                    <MapsComponent keys={selectedRegion.province.name}/>
                 </div>
-        </div>
+                <div className="container-form">
+                    <div className="container-pie">
+                        <PieChartComponent keys={selectedRegion.province.name}/>
+                    </div>
+                    <Form>
+                        <Form.Row>
+                            <Form.Group as={Col}>
+                                <Form.Label>Provinsi</Form.Label>
+                                <FormOption keys="province" disable={props.province.length === 0} change={(key, val)=>handleChange(key,val)} data={props.province}/>
+                            </Form.Group>
+                            <Form.Group as={Col}>
+                                <Form.Label>Kab / Kota</Form.Label>
+                                <FormOption  keys="districts" disable={props.districts.length === 0} change={(key,val)=>handleChange(key,val)} data={props.districts}/>
+                            </Form.Group>
+                        </Form.Row>
+                        <Form.Row>
+                            <Form.Group as={Col}>
+                                <Form.Label>Kecamatan</Form.Label>
+                                <FormOption  keys="subDistrict" disable={props.subDistrict.length === 0} change={(key,val)=>handleChange(key,val)} data={props.subDistrict}/>
+                            </Form.Group>
+                            <Form.Group as={Col}>
+                                <Form.Label>Kelurahan</Form.Label>
+                                <FormOption  keys="village" disable={props.village.length === 0} change={(key,val)=>handleChange(key,val)} data={props.village}/>
+                            </Form.Group>
+                        </Form.Row>
+                    </Form>
+                </div>
+            </div>
+            <div className="container-list">
+                <RegionList/>
+            </div>
         </div>
     );
 };

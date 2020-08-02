@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form} from 'react-bootstrap'
-import {connect} from "react-redux";
 
 const FormOption = (props) => {
     const {change,keys,disable,data} = props

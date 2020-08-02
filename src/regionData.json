@@ -1,138 +1,478 @@
 {
  "ACEH": {
   "id": "ID-AC",
-  "population": 2
+  "ibuKota": "Banda Aceh",
+  "population":{
+   "2010": 4523.1,
+   "2015": 5002,
+   "2020": 5459.9,
+   "2025": 5870,
+   "2030": 6227.6,
+   "2035": 6541.4
+  },
+  "luas": 5650051,
+  "pulau" : "Sumatra"
  },
  "SUMATERA UTARA": {
   "id": "ID-SU",
-  "population": 5.4
+  "ibuKota": "Medan",
+  "population": {
+   "2010": 13028.7,
+   "2015": 13937.8,
+   "2020": 14703.5,
+   "2025": 15311.2,
+   "2030": 15763.7,
+   "2035": 16073.4
+  },
+  "luas": 7242781,
+  "pulau" : "Sumatra"
  },
  "SUMATERA BARAT": {
   "id": "ID-SB",
-  "population": 2
+  "ibuKota": "Padang",
+  "population": {
+   "2010": 4865.3,
+   "2015": 5196.3,
+   "2020": 5498.8,
+   "2025": 5757.8,
+   "2030": 5968.3,
+   "2035": 6130.4
+  },
+  "luas": 42224.65,
+  "pulau" : "Sumatra"
  },
  "RIAU": {
   "id": "ID-RI",
-  "population": 2
+  "ibuKota": "Pekanbaru",
+  "population": {
+   "2010": 5574.9,
+   "2015": 6344.4,
+   "2020": 7128.3,
+   "2025": 7898.5,
+   "2030": 8643.3,
+   "2035": 9363
+  },
+  "luas": 8784423,
+  "pulau" : "Sumatra"
  },
  "JAMBI": {
   "id": "ID-JA",
-  "population": 2
+  "ibuKota": "Jambi",
+  "population": {
+   "2010": 3107.6,
+   "2015": 3402.1,
+   "2020": 3677.9,
+   "2025": 3926.6,
+   "2030": 4142.3,
+   "2035": 4322.9
+  },
+  "luas": 4534849,
+  "pulau" : "Sumatra"
  },
  "SUMATERA SELATAN": {
   "id": "ID-SS",
-  "population": 2
+  "ibuKota": "Palembang",
+  "population": {
+   "2010": 7481.6,
+   "2015": 8052.3,
+   "2020": 8567.9,
+   "2025": 9000.4,
+   "2030": 9345.2,
+   "2035": 9610.7
+  },
+  "luas": 6030254,
+  "pulau" : "Sumatra"
  },
  "BENGKULU": {
   "id": "ID-BE",
-  "population": 2
+  "ibuKota": "Bengkulu",
+  "population": {
+   "2010": 1722.1,
+   "2015": 1874.9,
+   "2020": 2019.8,
+   "2025": 2150.5,
+   "2030": 2264.3,
+   "2035": 2360.6
+  },
+  "luas": 1979515,
+  "pulau" : "Sumatra"
  },
  "LAMPUNG": {
   "id": "ID-LA",
-  "population": 2
+  "ibuKota": "Bandar Lampung",
+  "population": {
+   "2010": 7634,
+   "2015": 8117.3,
+   "2020": 8521.2,
+   "2025": 8824.6,
+   "2030": 9026.2,
+   "2035": 9136.1
+  },
+  "luas": 3773515,
+  "pulau" : "Sumatra"
  },
  "KEPULAUAN BANGKA BELITUNG": {
   "id": "ID-BB",
-  "population": 2
+  "ibuKota": "Pangkal Pinang",
+  "population": {
+   "2010": 1230.2,
+   "2015": 1372.8,
+   "2020": 1517.6,
+   "2025": 1657.5,
+   "2030": 1788.9,
+   "2035": 1911
+  },
+  "luas": 1642414,
+  "pulau" : "Sumatra"
  },
  "KEPULAUAN RIAU": {
   "id": "ID-KR",
-  "population": 2
+  "ibuKota": "Tanjung Pinang",
+  "population": {
+   "2010": 1692.8,
+   "2015": 1973,
+   "2020": 2242.2,
+   "2025": 2501.5,
+   "2030": 2768.5,
+   "2035": 3050.5
+  },
+  "luas": 8084.01,
+  "pulau" : "Sumatra"
  },
  "DKI JAKARTA": {
   "id": "ID-JK",
-  "population": 2
+  "ibuKota": "Jakarta Pusat",
+  "population": {
+   "2010": 9640.4,
+   "2015": 10177.9,
+   "2020": 10645,
+   "2025": 11034,
+   "2030": 11310,
+   "2035": 11459.6
+  },
+  "luas": 740.29,
+  "pulau" : "Jawa"
  },
  "JAWA BARAT": {
   "id": "ID-JB",
-  "population": 2
+  "ibuKota": "Bandung",
+  "population": {
+   "2010": 43227.1,
+   "2015": 46709.6,
+   "2020": 49935.7,
+   "2025": 52785.7,
+   "2030": 55193.8,
+   "2035": 57137.3
+  },
+  "luas": 36925.05,
+  "pulau" : "Jawa"
  },
  "JAWA TENGAH": {
   "id": "ID-JT",
-  "population": 2
+  "ibuKota": "Semarang",
+  "population": {
+   "2010": 32443.9,
+   "2015": 33774.1,
+   "2020": 34940.1,
+   "2025": 35958.6,
+   "2030": 36751.7,
+   "2035": 37219.4
+  },
+  "luas": 32799.71,
+  "pulau" : "Jawa"
  },
  "DI YOGYAKARTA": {
   "id": "ID-YO",
-  "population": 2
+  "ibuKota": "Yogyakarta",
+  "population": {
+   "2010": 3467.5,
+   "2015": 3679.2,
+   "2020": 3882.3,
+   "2025": 4064.6,
+   "2030": 4220.2,
+   "2035": 4348.5
+  },
+  "luas": 3133.15,
+  "pulau" : "Jawa"
  },
  "JAWA TIMUR": {
   "id": "ID-JT",
-  "population": 2
+  "ibuKota": "Surabaya",
+  "population": {
+   "2010": 37565.8,
+   "2015": 38847.6,
+   "2020": 39886.3,
+   "2025": 40646.1,
+   "2030": 41077.3,
+   "2035": 41127.7
+  },
+  "luas": 46689.64,
+  "pulau" : "Jawa"
  },
  "BANTEN": {
   "id": "ID-BT",
-  "population": 2
+  "ibuKota": "Serang",
+  "population": {
+   "2010": 10688.6,
+   "2015": 11955.2,
+   "2020": 13160.5,
+   "2025": 14249,
+   "2030": 15201.8,
+   "2035": 16033.1
+  },
+  "luas": 9018.64,
+  "pulau" : "Jawa"
  },
  "BALI": {
   "id": "ID-BA",
-  "population": 2
+  "ibuKota": "Denpasar",
+  "population": {
+   "2010": 3907.4,
+   "2015": 4152.8,
+   "2020": 4380.8,
+   "2025": 4586,
+   "2030": 4765.4,
+   "2035": 4912.4
+  },
+  "luas": 5449.37,
+  "pulau" : "Nusa Tenggara"
  },
  "NUSA TENGGARA BARAT": {
   "id": "ID-NB",
-  "population": 2
+  "ibuKota": "Mataram",
+  "population": {
+   "2010": 4516.1,
+   "2015": 4835.6,
+   "2020": 5125.6,
+   "2025": 5375.6,
+   "2030": 5583.8,
+   "2035": 5754.2
+  },
+  "luas": 19708.79,
+  "pulau" : "Nusa Tenggara"
  },
  "NUSA TENGGARA TIMUR": {
   "id": "ID-NT",
-  "population": 2
+  "ibuKota": "Kupang",
+  "population": {
+   "2010": 4706.2,
+   "2015": 5120.1,
+   "2020": 5541.4,
+   "2025": 5970.8,
+   "2030": 6402.2,
+   "2035": 6829.1
+  },
+  "luas": 46137.87,
+  "pulau" : "Nusa Tenggara"
  },
  "KALIMANTAN BARAT": {
   "id": "ID-KB",
-  "population": 2
+  "ibuKota": "Pontianak",
+  "population": {
+   "2010": 4411.4,
+   "2015": 4789.6,
+   "2020": 5134.8,
+   "2025": 5432.6,
+   "2030": 5679.2,
+   "2035": 5878.1
+  },
+  "luas": 120114.32,
+  "pulau" : "Kalimantan"
  },
  "KALIMANTAN TENGAH": {
   "id": "ID-KT",
-  "population": 2
+  "ibuKota": "Palangkaraya",
+  "population": {
+   "2010": 2220.8,
+   "2015": 2495,
+   "2020": 2769.2,
+   "2025": 3031,
+   "2030": 3273.6,
+   "2035": 3494.5
+  },
+  "luas": 153564.50,
+  "pulau" : "Kalimantan"
  },
  "KALIMANTAN SELATAN": {
   "id": "ID-KS",
-  "population": 2
+  "ibuKota": "Banjarmasin",
+  "population": {
+   "2010": 3642.6,
+   "2015": 3989.8,
+   "2020": 4304,
+   "2025": 4578.3,
+   "2030": 4814.2,
+   "2035": 5016.3
+  },
+  "luas": 37530.52,
+  "pulau" : "Kalimantan"
  },
  "KALIMANTAN TIMUR": {
   "id": "ID-KT",
-  "population": 2
+  "ibuKota": "Samarinda",
+  "population": {
+   "2010": 3576.1,
+   "2015": 4068.6,
+   "2020": 4561.7,
+   "2025": 5040.7,
+   "2030": 5497,
+   "2035": 5929.2
+  },
+  "luas": 194849.08,
+  "pulau" : "Kalimantan"
  },
  "KALIMANTAN UTARA": {
   "id": "ID-KU",
-  "population": 2
+  "ibuKota": "Tanjung Selor",
+  "population": {
+   "2010": 2277.7,
+   "2015": 2412.1,
+   "2020": 2528.8,
+   "2025": 2624.3,
+   "2030": 2696.1,
+   "2035": 2743.7
+  },
+  "luas": 72567.49,
+  "pulau" : "Kalimantan"
  },
  "SULAWESI UTARA": {
   "id": "ID-SA",
-  "population": 2
+  "ibuKota": "Manado",
+  "population": {
+   "2010": 2646,
+   "2015": 2876.7,
+   "2020": 3097,
+   "2025": 3299.5,
+   "2030": 3480.6,
+   "2035": 3640.8
+  },
+  "luas": 13930.73,
+  "pulau" : "Sulawesi"
  },
  "SULAWESI TENGAH": {
   "id": "ID-ST",
-  "population": 2
+  "ibuKota": "Palu",
+  "population": {
+   "2010": 8060.4,
+   "2015": 8520.3,
+   "2020": 8928,
+   "2025": 9265.5,
+   "2030": 9521.7,
+   "2035": 9696
+  },
+  "luas": 68089.83,
+  "pulau" : "Sulawesi"
  },
  "SULAWESI SELATAN": {
   "id": "ID-SN",
-  "population": 2
+  "ibuKota": "Makassar",
+  "population": {
+   "2010": 2243.6,
+   "2015": 2499.5,
+   "2020": 2755.6,
+   "2025": 3003,
+   "2030": 3237.7,
+   "2035": 3458.1
+  },
+  "luas": 46116.45,
+  "pulau" : "Sulawesi"
  },
  "SULAWESI TENGGARA": {
   "id": "ID-SG",
-  "population": 2
+  "ibuKota": "Kendari",
+  "population": {
+   "2010": 1044.8,
+   "2015": 1133.2,
+   "2020": 1219.6,
+   "2025": 1299.7,
+   "2030": 1370.2,
+   "2035": 1430.1
+  },
+  "luas": 36757.45,
+  "pulau" : "Sulawesi"
  },
  "GORONTALO": {
   "id": "ID-GO",
-  "population": 2
+  "ibuKota": "Gorontalo",
+  "population": {
+   "2010": 1541.9,
+   "2015": 1686.5,
+   "2020": 1831.9,
+   "2025": 1972.7,
+   "2030": 2104.2,
+   "2035": 2227.8
+  },
+  "luas": 12165.44,
+  "pulau" : "Sumatra"
  },
  "SULAWESI BARAT": {
   "id": "ID-SR",
-  "population": 2
+  "ibuKota": "Mamuju",
+  "population": {
+   "2010": 1043.3,
+   "2015": 1162.3,
+   "2020": 1278.8,
+   "2025": 1391,
+   "2030": 1499.4,
+   "2035": 1603.6
+  },
+  "luas": 16787.19,
+  "pulau" : "Sulawesi"
  },
  "MALUKU": {
   "id": "ID-MA",
-  "population": 2
+  "ibuKota": "Ambon",
+  "population": {
+   "2010": 1043.3,
+   "2015": 1162.3,
+   "2020": 1278.8,
+   "2025": 1391,
+   "2030": 1499.4,
+   "2035": 1603.6
+  },
+  "luas": 47350.42,
+  "pulau" : "Maluku"
  },
  "MALUKU UTARA": {
   "id": "ID-MU",
-  "population": 2
+  "ibuKota": "Sofifi",
+  "population": {
+   "2010": 1043.3,
+   "2015": 1162.3,
+   "2020": 1278.8,
+   "2025": 1391,
+   "2030": 1499.4,
+   "2035": 1603.6
+  },
+  "luas": 39959.99,
+  "pulau" : "Maluku"
  },
  "PAPUA BARAT": {
   "id": "ID-PB",
-  "population": 2
+  "ibuKota": "Manokwari",
+  "population": {
+   "2010": 2857,
+   "2015": 3149.4,
+   "2020": 3435.4,
+   "2025": 3701.7,
+   "2030": 3939.4,
+   "2035": 4144.6
+  },
+  "luas": 114566.40,
+  "pulau" : "Papua"
  },
  "PAPUA": {
   "id": "ID-PA",
-  "population": 2
+  "ibuKota": "Jayapura",
+  "population": {
+   "2010": 2857,
+   "2015": 3149.4,
+   "2020": 3435.4,
+   "2025": 3701.7,
+   "2030": 3939.4,
+   "2035": 4144.6
+  },
+  "luas": 309934.40,
+  "pulau" : "Papua"
  }
 }
