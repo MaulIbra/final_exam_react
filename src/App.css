@@ -85,23 +85,27 @@
 .container-region{
   display: flex;
   flex-direction: row;
-  padding: 50px;
+}
+
+.container-region-parent{
+  background: #fafafa;
 }
 
 .container-form{
-  width: 50%;
+  margin: 8px;
+  width: 100%;
 }
 
 .container-form Form{
-  border: 1px solid #eaeaea;
-  border-radius: 20px;
-  padding: 25px;
-  margin: 25px;
-  background: #ffffff;
+  background: white;
+  padding: 32px;
+  margin-top: 8px;
 }
 
 .container-map{
-
+  background: white;
+  padding: 16px;
+  margin: 8px;
 }
 
 .container-list{
@@ -111,6 +115,12 @@
 
 path[fill='#123456'] {
   display: none !important
+}
+
+.container-pie{
+  display: flex;
+  justify-content: center;
+  background: white;
 }
 
 
