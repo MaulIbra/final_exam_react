@@ -15,6 +15,7 @@
 
 .navbar-menu{
   color: #292b2c;
+  text-decoration: inherit;
   font-size: large;
   font-family: Poppins, sans-serif;
   margin: 12px;
@@ -22,6 +23,7 @@
 }
 
 .navbar-menu-active{
+  text-decoration: inherit;
   font-size: large;
   font-family: Poppins, sans-serif;
   color: #0275d8;

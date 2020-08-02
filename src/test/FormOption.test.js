@@ -23,9 +23,4 @@ describe('<FormOption/>',()=>{
         const wrapper = shallow(<FormOption keys={"province"} data={mockData} change={mockedOnChange} disable={false}/>)
         expect(wrapper.find('option').length).toBe(3);
     });
-    it('should  <FormOption> render without error', function () {
-        const mockedOnChange = jest.fn();
-        const wrapper = shallow(<FormOption keys={"province"} data={mockData} change={mockedOnChange} disable={false}/>)
-        expect(wrapper.text()).toBe("-- Pilih Provinsi --ACEHSUMATERA UTARA");
-    });
 })

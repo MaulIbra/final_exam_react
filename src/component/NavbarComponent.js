@@ -10,8 +10,8 @@ const NavbarComponent = (props) => {
                 <a className="navbar-logo-brand">aulana</a>
             </div>
             <div className="navbar-menu-container">
-                <Link to="/" className={props.history.location.pathname === '/' ? "navbar-menu-active" : "navbar-menu"}>Home</Link>
-                <Link to="/region" className={props.history.location.pathname === '/region' ? "navbar-menu-active" : "navbar-menu"}>Region</Link>
+                <Link to="/" className={props.history.location.pathname === '/' ? "navbar-menu-active" : "navbar-menu"} style={{ textDecoration: 'none' }}>Home</Link>
+                <Link to="/region" className={props.history.location.pathname === '/region' ? "navbar-menu-active" : "navbar-menu"} style={{ textDecoration: 'none' }}>Region</Link>
             </div>
         </div>
     );
