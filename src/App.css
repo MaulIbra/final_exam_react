@@ -6,7 +6,7 @@
   justify-content:space-between;
   align-items: center;
   background: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
 }
 
 .navbar-menu-container{
@@ -88,6 +88,7 @@
 }
 
 .container-region-parent{
+  margin-top: 8px;
   background: #fafafa;
 }
 
@@ -99,7 +100,7 @@
 .container-form Form{
   background: white;
   padding: 32px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .container-map{
@@ -109,9 +110,31 @@
 }
 
 .container-list{
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 8px;
+  padding: 32px;
+  background: white;
 }
+
+.container-regionlist{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.region-list-input{
+  width: 500px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.region-list-table{
+  width: 1000px;
+  align-self: center;
+}
+
+
 
 path[fill='#123456'] {
   display: none !important

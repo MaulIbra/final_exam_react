@@ -13,7 +13,7 @@ const PageController = () => {
                 <Route path="/" exact>
                     <HomeContainer/>
                 </Route>
-                <Route path="/region">
+                <Route path="/region" exact>
                     <RegionContainer/>
                 </Route>
                 <Route path="*">

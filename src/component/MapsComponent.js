@@ -35,6 +35,7 @@ const MapsComponent = ({keys}) => {
                 resolution:'provinces',
                 colorAxis: { colors: ['green', 'red'] },
                 region: 'ID',
+                title: 'PETA INDONESIA',
             }}
             rootProps={{ 'data-testid': '2' }}
         />
