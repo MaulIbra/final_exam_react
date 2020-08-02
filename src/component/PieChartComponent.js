@@ -1,23 +1,34 @@
 import React from 'react';
 import Chart from "react-google-charts";
+import _ from "lodash";
+import regionData from "../regionData.json";
 
-const PieChartComponent = () => {
+const PieChartComponent = ({keys}) => {
+    let ISO_array = []
+    let keysId = keys ? keys.toUpperCase() : '';
+    ISO_array.push(['Tahun', 'Populasi'])
+    if (regionData[keysId]){
+        _.forEach(regionData[keysId].population, function(value,key) {
+            let dataMap = []
+            dataMap.push(key,value)
+            ISO_array.push(dataMap)
+        });
+    }else{
+        ISO_array.push(["0",100])
+    }
+
+
     return (
         <Chart
             width={'500px'}
             height={'300px'}
             chartType="PieChart"
             loader={<div>Loading Chart</div>}
-            data={[
-                ['Task', 'Hours per Day'],
-                ['Work', 11],
-                ['Eat', 2],
-                ['Commute', 2],
-                ['Watch TV', 2],
-                ['Sleep', 7],
-            ]}
+            data={
+                ISO_array
+            }
             options={{
-                title: 'My Daily Activities',
+                title: 'Proyeksi Penduduk menurut Provinsi, 2010-2035',
             }}
             rootProps={{ 'data-testid': '1' }}
         />

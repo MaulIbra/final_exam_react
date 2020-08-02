@@ -5,7 +5,7 @@ import regionData from '../regionData.json';
 const MapsComponent = ({keys}) => {
     let ISO_array = []
     let keysId = keys ? keys.toUpperCase() : '';
-    ISO_array.push(['Provinces', 'Population % '])
+    ISO_array.push(['Provinces', 'Luas'])
     _.forEach(regionData, function(value) {
         if (regionData[keysId]){
             if (value.id !== regionData[keysId].id){
@@ -13,7 +13,7 @@ const MapsComponent = ({keys}) => {
                 dataMap.push(value.id,null)
                 ISO_array.push(dataMap)
             }else{
-                ISO_array.push([regionData[keysId].id,regionData[keys.toUpperCase()].population])
+                ISO_array.push([regionData[keysId].id,regionData[keys.toUpperCase()].luas])
             }
         }else{
             let dataMap = []
@@ -37,7 +37,7 @@ const MapsComponent = ({keys}) => {
                 region: 'ID',
                 title: 'PETA INDONESIA',
             }}
-            rootProps={{ 'data-testid': '2' }}
+            rootProps={{ 'data-testid': '4' }}
         />
     );
 };

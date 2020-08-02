@@ -60,7 +60,6 @@ const RegionList = (props) => {
 
     const createPagination = ()=>{
         for (let number = 1; number <= Math.ceil(data.length/pagination.rowPerpage); number++) {
-            console.log(number,pagination.activePage)
             if (number === pagination.activePage){
                 items.push(<Pagination.Item key={number} onClick={e=>handlePagination(e.target.text)} active >{number}</Pagination.Item>);
             }else{

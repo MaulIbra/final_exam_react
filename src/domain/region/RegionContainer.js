@@ -105,7 +105,7 @@ const RegionContainer = (props) => {
                 </div>
                 <div className="container-form">
                     <div className="container-pie">
-                        <PieChartComponent/>
+                        <PieChartComponent keys={selectedRegion.province.name}/>
                     </div>
                     <Form>
                         <Form.Row>
