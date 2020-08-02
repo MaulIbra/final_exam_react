@@ -1,0 +1,138 @@
+{
+ "ACEH": {
+  "id": "ID-AC",
+  "population": 2
+ },
+ "SUMATERA UTARA": {
+  "id": "ID-SU",
+  "population": 5.4
+ },
+ "SUMATERA BARAT": {
+  "id": "ID-SB",
+  "population": 2
+ },
+ "RIAU": {
+  "id": "ID-RI",
+  "population": 2
+ },
+ "JAMBI": {
+  "id": "ID-JA",
+  "population": 2
+ },
+ "SUMATERA SELATAN": {
+  "id": "ID-SS",
+  "population": 2
+ },
+ "BENGKULU": {
+  "id": "ID-BE",
+  "population": 2
+ },
+ "LAMPUNG": {
+  "id": "ID-LA",
+  "population": 2
+ },
+ "KEPULAUAN BANGKA BELITUNG": {
+  "id": "ID-BB",
+  "population": 2
+ },
+ "KEPULAUAN RIAU": {
+  "id": "ID-KR",
+  "population": 2
+ },
+ "DKI JAKARTA": {
+  "id": "ID-JK",
+  "population": 2
+ },
+ "JAWA BARAT": {
+  "id": "ID-JB",
+  "population": 2
+ },
+ "JAWA TENGAH": {
+  "id": "ID-JT",
+  "population": 2
+ },
+ "DI YOGYAKARTA": {
+  "id": "ID-YO",
+  "population": 2
+ },
+ "JAWA TIMUR": {
+  "id": "ID-JT",
+  "population": 2
+ },
+ "BANTEN": {
+  "id": "ID-BT",
+  "population": 2
+ },
+ "BALI": {
+  "id": "ID-BA",
+  "population": 2
+ },
+ "NUSA TENGGARA BARAT": {
+  "id": "ID-NB",
+  "population": 2
+ },
+ "NUSA TENGGARA TIMUR": {
+  "id": "ID-NT",
+  "population": 2
+ },
+ "KALIMANTAN BARAT": {
+  "id": "ID-KB",
+  "population": 2
+ },
+ "KALIMANTAN TENGAH": {
+  "id": "ID-KT",
+  "population": 2
+ },
+ "KALIMANTAN SELATAN": {
+  "id": "ID-KS",
+  "population": 2
+ },
+ "KALIMANTAN TIMUR": {
+  "id": "ID-KT",
+  "population": 2
+ },
+ "KALIMANTAN UTARA": {
+  "id": "ID-KU",
+  "population": 2
+ },
+ "SULAWESI UTARA": {
+  "id": "ID-SA",
+  "population": 2
+ },
+ "SULAWESI TENGAH": {
+  "id": "ID-ST",
+  "population": 2
+ },
+ "SULAWESI SELATAN": {
+  "id": "ID-SN",
+  "population": 2
+ },
+ "SULAWESI TENGGARA": {
+  "id": "ID-SG",
+  "population": 2
+ },
+ "GORONTALO": {
+  "id": "ID-GO",
+  "population": 2
+ },
+ "SULAWESI BARAT": {
+  "id": "ID-SR",
+  "population": 2
+ },
+ "MALUKU": {
+  "id": "ID-MA",
+  "population": 2
+ },
+ "MALUKU UTARA": {
+  "id": "ID-MU",
+  "population": 2
+ },
+ "PAPUA BARAT": {
+  "id": "ID-PB",
+  "population": 2
+ },
+ "PAPUA": {
+  "id": "ID-PA",
+  "population": 2
+ }
+}
