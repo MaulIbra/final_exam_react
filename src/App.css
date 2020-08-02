@@ -129,6 +129,10 @@
   align-self: center;
 }
 
+.region-list-pagination{
+  align-self: center;
+}
+
 .region-list-table{
   width: 1000px;
   align-self: center;
